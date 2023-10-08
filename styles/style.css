@@ -127,7 +127,7 @@ h2 > .magic > .coracao-magic-2 {
 
   display: block;
   position: absolute;
-  top: 0;
+  top: 10%;
   left: -10%;
   width: 10%;
   height: 10%;
@@ -562,6 +562,83 @@ h2 > .magic > .coracao-magic-3 > svg > path {
     background: var(--cor-secundaria);
   }
 
+  .apresentacao {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items:center;
+    padding: 0rem 0rem;
+    margin: 4% 0;
+    gap: 3rem;
+  }
+  
+  .apresentacao__textos {
+    width: 90%;
+    font-family: var(--fonte-quaternaria);
+    font-size: 2.5rem;
+    line-height: 3.5rem
+  }
+
+  .apresentacao__textos__h2 {
+    font-family: var(--fonte-quaternaria);
+    font-size: 5rem;
+    line-height: 5rem;
+  }
+  
+  .main__section_favoritos {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 2rem;
+    width: 90%;
+    margin: 1rem;
+    transform: translateX(12%);
+  }
+  .main__section_favoritos-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 90%;
+    margin: 1rem;
+    transform: translateX(12%);
+  }
+
+  .img__div__favoritos {
+    width: 60%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0px 1px 20px 1px #6a9c897b;
+  }
+  
+  .img__div__favoritos-biel {
+    width: 60%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 12px;
+    object-position: 0 -20px;
+    box-shadow: 0px 1px 20px 1px #6a9c897b;
+  }
+  
+  .img__div__favoritos-ghibli {
+    width: 60%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 12px;
+    object-position: -40px 0px;
+    box-shadow: 0px 1px 20px 1px #6a9c897b;
+  }
+  
+  .img__div__favoritos-cats {
+    width: 60%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0px 1px 20px 1px #6a9c897b;
+  }
+
+
   .main__fotocas {
     width: 80%;
     display: flex;
@@ -576,9 +653,43 @@ h2 > .magic > .coracao-magic-3 > svg > path {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 8%;
-    width: 60%;
+    gap: 18%;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0;
   }  
+
+  .img__fotocas,
+  .img__fotocas-4 {
+    margin: 0.6rem;
+  }
+
+  .img__fotocas {
+    width: 36%;
+    aspect-ratio: 5/7;
+    object-fit: cover;
+    border-radius: 12px;
+    filter: grayscale(100%);
+    transition: 0.5s;
+  }
+  
+  .img__fotocas-4 {
+    width: 36%;
+    aspect-ratio: 5/7;
+    object-fit: cover;
+    border-radius: 12px;
+    filter: grayscale(100%);
+    transition: 0.5s;
+    object-position: 80% 0px;
+  }
+
+  .img__fotocas:hover,
+  .img__fotocas-4:hover {
+  filter: grayscale(0%);
+  box-shadow: 0px 1px 20px 1px #6a9c897b;
+  transform: scale(1.05);
+  z-index: 20;
+}
 
   .rodape {
     padding: 2% 5%;
