@@ -128,7 +128,7 @@ h2 > .magic > .coracao-magic-2 {
   display: block;
   position: absolute;
   top: 10%;
-  left: -10%;
+  left: -5%;
   width: 10%;
   height: 10%;
 
@@ -310,7 +310,7 @@ h2 > .magic > .coracao-magic-3 > svg > path {
   background: var(--cor-terciaria);
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 1671px) {
   .cabecalho__nav {
     display: flex;
     justify-content: space-evenly;
@@ -509,23 +509,24 @@ h2 > .magic > .coracao-magic-3 > svg > path {
     width: 90%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
     margin: 2% 0;
+    justify-content: center;
   }
   
   
   .main__section__fotocas {
     display: flex;
-    align-items: center;
+    justify-content: center;
+    margin: 2% -24% 0 0;
     gap: 2rem;
-    width: 90%;
-    margin: 2% 2% 2% 0;
-    transform: translateX(-7%);
+    width: 100%;
+    flex-wrap: wrap;
   }  
 
   .img__fotocas {
-    width: 59%;
+    width: 45%;
+    justify-content: center;
+    align-items: center;
     aspect-ratio: 5/7;
     object-fit: cover;
     border-radius: 12px;
@@ -534,7 +535,7 @@ h2 > .magic > .coracao-magic-3 > svg > path {
   }
   
   .img__fotocas-4 {
-    width: 59%;
+    width: 45%;
     aspect-ratio: 5/7;
     object-fit: cover;
     border-radius: 12px;
@@ -557,9 +558,13 @@ h2 > .magic > .coracao-magic-3 > svg > path {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    gap: 35%;
+    gap: 2.4rem;
     width: 100%;
     background: var(--cor-secundaria);
+  }
+  
+  .cabecalho__nav__a {
+    font-size: 255%;
   }
 
   .apresentacao {
@@ -570,42 +575,84 @@ h2 > .magic > .coracao-magic-3 > svg > path {
     padding: 0rem 0rem;
     margin: 4% 0;
     gap: 3rem;
+    width: 100%
+  }
+
+  .apresentacao__img {
+    width: 70%;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0px 1px 20px 1px #6a9c897b;
   }
   
   .apresentacao__textos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 90%;
     font-family: var(--fonte-quaternaria);
     font-size: 2.5rem;
-    line-height: 3.5rem
   }
 
   .apresentacao__textos__h2 {
     font-family: var(--fonte-quaternaria);
-    font-size: 5rem;
+    text-align: center;
+    font-size: 4rem;
     line-height: 5rem;
   }
-  
+
+  .apresentacao__textos__p {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+  }
+
   .main__section_favoritos {
     display: flex;
     flex-direction: column-reverse;
+    justify-content: center;
     align-items: center;
     gap: 2rem;
-    width: 90%;
-    margin: 1rem;
+    padding: 2rem 0;
+    width: auto;
+    margin: 0.1rem;
     transform: translateX(12%);
   }
   .main__section_favoritos-2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    padding: 2rem 0;
+    gap: 1rem;
     width: 90%;
-    margin: 1rem;
+    margin: 0.1rem;
     transform: translateX(12%);
   }
 
+  .section__div__favoritos__h2 {
+    margin: 0.1rem;
+    font-family: var(--fonte-quaternaria);
+    font-size: 400%;
+    color: var(--cor-terciaria);
+    text-align: center;
+  }
+  
+  .section__div__favoritos__h2-2 {
+    font-family: var(--fonte-quaternaria);
+    font-size: 400%;
+    color: var(--cor-secundaria);
+    text-align: center;
+  }
+
+  .section__div__favoritos__p {
+    font-size: 1.5rem;
+  }
+
+  .section__div__favoritos__p-2 {
+    font-size: 1.5rem;
+  }
+
   .img__div__favoritos {
-    width: 60%;
+    width: 80%;
     aspect-ratio: 1/1;
     object-fit: cover;
     border-radius: 12px;
@@ -613,7 +660,7 @@ h2 > .magic > .coracao-magic-3 > svg > path {
   }
   
   .img__div__favoritos-biel {
-    width: 60%;
+    width: 80%;
     aspect-ratio: 1/1;
     object-fit: cover;
     border-radius: 12px;
@@ -665,7 +712,7 @@ h2 > .magic > .coracao-magic-3 > svg > path {
   }
 
   .img__fotocas {
-    width: 36%;
+    width: 80%;
     aspect-ratio: 5/7;
     object-fit: cover;
     border-radius: 12px;
@@ -674,7 +721,7 @@ h2 > .magic > .coracao-magic-3 > svg > path {
   }
   
   .img__fotocas-4 {
-    width: 36%;
+    width: 80%;
     aspect-ratio: 5/7;
     object-fit: cover;
     border-radius: 12px;
