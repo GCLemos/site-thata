@@ -90,6 +90,7 @@ body {
   padding: 0.5rem 12rem;
   margin: 4% 0;
   gap: 4rem;
+  text-align: justify;
 }
 
 .apresentacao__textos {
@@ -103,6 +104,14 @@ body {
   font-family: var(--fonte-quaternaria);
   font-size: 6rem;
   line-height: 6rem;
+  text-align: center;
+}
+
+.apresentacao__img {
+  object-fit: cover;
+  width: 50%;
+  border-radius: 12px;
+  box-shadow: 0px 1px 20px 1px #6a9c897b;
 }
 
 h2 > .magic {
@@ -114,8 +123,8 @@ h2 > .magic > .coracao-magic-1 {
 
   display: block;
   position: absolute;
-  top: 15%;
-  left: 96%;
+  top: 14%;
+  left: 95.8%;
   width: 5%;
   height: 10%;
 
@@ -163,14 +172,6 @@ h2 > .magic > .coracao-magic-3 > svg > path {
 .apresentacao__textos__p {
   font-family: var(--fonte-terciaria);
   font-size: 2.2rem;
-}
-
-.apresentacao__img {
-  aspect-ratio: 1/1;
-  object-fit: cover;
-  height: 40%;
-  border-radius: 12px;
-  box-shadow: 0px 1px 20px 1px #6a9c897b;
 }
 
 .main__fotocas {
@@ -558,7 +559,7 @@ h2 > .magic > .coracao-magic-3 > svg > path {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    gap: 2.4rem;
+    gap: 2rem;
     width: 100%;
     background: var(--cor-secundaria);
   }
